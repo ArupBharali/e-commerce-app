@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { getUserDetails, getUserOrders } from '../services/userService';
+import { getUserDetails, getUserOrders } from '../../services/userService';
 import { useNavigate } from 'react-router-dom';
 import { Card, List, Typography, Spin, Alert, Button, Layout } from 'antd';
-import LoadingIndicator from '../components/LoadingIndicator';
+import LoadingIndicator from '../../components/LoadingIndicator/LoadingIndicator';
 
 const { Content } = Layout;
 const { Title, Text } = Typography;

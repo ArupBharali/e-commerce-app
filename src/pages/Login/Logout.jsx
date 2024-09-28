@@ -1,3 +1,5 @@
+import { logout } from '../../services/authService';
+
 // src/pages/Logout.js
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -6,8 +8,8 @@ const Logout = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        // Clear authentication data (e.g., token or session)
-        localStorage.removeItem('token'); // Clear JWT token from localStorage
+        logout();
+
         localStorage.removeItem('userDetails'); // Clear user details if stored
 
         // Perform any other cleanup needed here (e.g., API call to invalidate token)

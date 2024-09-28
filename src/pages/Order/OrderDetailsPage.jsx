@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { getOrderDetails } from '../services/userService';
+import { getOrderDetails } from '../../services/userService';
 import PropTypes from 'prop-types';
 
 const OrderDetailsPage = ({ orderId }) => {

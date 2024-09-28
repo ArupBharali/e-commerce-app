@@ -1,8 +1,8 @@
 import { useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import '../components/Navbar.css'; // Ensure this path is correct
-import CartContext from '../context/CartContext';
-import AuthContext from '../context/AuthContext';
+import './Navbar.css'; // Ensure this path is correct
+import CartContext from '../../context/CartContext';
+import AuthContext from '../../context/AuthContext';
 
 const Navbar = () => {
     const navigate = useNavigate();

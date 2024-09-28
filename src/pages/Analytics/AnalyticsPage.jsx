@@ -2,8 +2,8 @@
 import { useState, useEffect } from 'react';
 import { Card, Row, Col, Statistic, Table, notification, Layout, Spin, Typography } from 'antd';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, PieChart, Pie, Sector } from 'recharts';
-import { getSalesData, getUserActivityData } from '../services/analyticsService'; // Mocked service functions
-import '.././components/AnalyticsPage.css';
+import { getSalesData, getUserActivityData } from '../../services/analyticsService'; // Mocked service functions
+import '.   /AnalyticsPage.css';
 
 const { Content } = Layout;
 const { Title } = Typography;

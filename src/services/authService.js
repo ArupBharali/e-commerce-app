@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 //const API_URL = `${import.meta.env.VITE_API_URL}/auth`;
-const API_URL = `https://localhost:7208/api/auth`;
+const API_URL = 'http://localhost:5269/api/auth'; // Ensure this is set correctly
+
 
 export const login = async (username, password) => {
     console.log('auth service login');
@@ -54,6 +55,40 @@ export const isAuthenticated = () => {
     return !!getAuthToken();
 };
 
-export const logout = () => {
-    localStorage.removeItem('token');
+export const logout = async () => {
+    try {
+        const response = await fetch(`${API_URL}/logout`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${localStorage.getItem('token')}` // Add your token if required
+            },
+            body: ""
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        console.log('logout response', response); // Handle success message
+        //localStorage.removeItem('token');
+
+        const data = await response.json();
+        return data;
+
+        //// Get the token from local storage or wherever you're storing it
+        //const token = localStorage.getItem('token');
+
+        //const response = await axios.post(`${API_URL}/logout`, {
+        //    headers: {
+        //        'Authorization': `Bearer ${token}`, // Include the token if needed for authentication
+        //        'Content-Type': 'application/json',
+        //    },
+        //});
+
+        //return response.data.token;
+    } catch (error) {
+        console.error("Logout error", error.response.data);
+        throw error;
+    }
 };

@@ -2,7 +2,8 @@
 import axios from 'axios';
 
 //const API_URL = import.meta.env.VITE_API_URL; // Ensure this is set correctly
-const API_URL = 'https://localhost:7208/api'; // Ensure this is set correctly
+const API_URL = 'http://localhost:5268/api/admin'; // Ensure this is set correctly
+
 
 export const fetchOrders = async () => {
     const response = await axios.get(`${API_URL}/orders`, {

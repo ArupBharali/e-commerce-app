@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { getProducts, addProduct, deleteProduct, updateProduct } from '../services/productService';
+import { getProducts, addProduct, deleteProduct, updateProduct } from '../../services/productService';
 import { Form, Input, Button, Table, Modal, notification, Spin, Layout, Typography, Popconfirm } from 'antd';
 import { DeleteOutlined, EditOutlined } from '@ant-design/icons';
-import AntTable from '../components/AntTable';
+import AntTable from '../../components/Grids/AntdTable/AntTable';
 
 const { Content } = Layout;
 const { Title } = Typography;

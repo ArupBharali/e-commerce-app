@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Form, Input, Button, Alert, Layout, Spin } from 'antd';
-import { register } from '../services/authService';
+import { register } from '../../services/authService';
 
 const { Content } = Layout;
 

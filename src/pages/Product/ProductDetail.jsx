@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { getProductById } from '../services/productService';
-import { addToCart } from '../services/cartService';
+import { getProductById } from '../../services/productService';
+import { addToCart } from '../../services/cartService';
 import { Layout, Card, Button, Typography, Spin, Alert, Row, Col } from 'antd';
-import CartContext from '../context/CartContext';
+import CartContext from '../../context/CartContext';
 
 const { Content } = Layout;
 const { Title, Text } = Typography;

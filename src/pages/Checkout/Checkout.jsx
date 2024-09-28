@@ -1,7 +1,7 @@
 import { useState, useEffect, useContext } from 'react';
-import { getCart, clearCart } from '../services/cartService';
+import { getCart, clearCart } from '../../services/cartService';
 import { useNavigate } from 'react-router-dom';
-import CartContext from '../context/CartContext';
+import CartContext from '../../context/CartContext';
 
 const Checkout = () => {
     const [localCart, setLocalCart] = useState([]);

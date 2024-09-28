@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Layout, Input, Card, Row, Col, Pagination, Select, Form, InputNumber, Spin, Alert, Typography } from 'antd';
-import { getProducts } from '../services/productService';
-import ProductFilter from '../components/ProductFilter';
+import { getProducts } from '../../services/productService';
+import ProductFilter from './ProductFilter';
 
 const { Content } = Layout;
 const { Title } = Typography;

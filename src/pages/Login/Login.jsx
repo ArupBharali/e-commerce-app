@@ -1,8 +1,8 @@
 import { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Form, Input, Button, Alert } from 'antd'; // Ant Design components
-import { login as loginService } from '../services/authService';
-import AuthContext from '../context/AuthContext';
+import { login as loginService } from '../../services/authService';
+import AuthContext from '../../context/AuthContext';
 
 const Login = () => {
     const [username, setUsername] = useState('');

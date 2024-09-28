@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { Content } from 'antd/es/layout/layout';
 import { Row, Col, Card, List, Button, Typography } from 'antd';
 import { Link } from 'react-router-dom';
-import CartContext from '../context/CartContext';
+import CartContext from '../../context/CartContext';
 
 const { Title, Text } = Typography;
 

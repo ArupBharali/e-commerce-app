@@ -1,8 +1,8 @@
 ﻿import { useState, useMemo, useEffect } from 'react';
 import { Radio, Input, Spin, Typography, Layout } from 'antd';
-import ReactTable from '../components/ReactTable';
-import PaginationControl from '../components/PaginationControl';
-import { getProducts } from '../services/productService'; // Implement these services
+import ReactTable from '../../components/Grids/ReactTable/ReactTable';
+import PaginationControl from '../../components/Pagination/PaginationControl';
+import { getProducts } from '../../services/productService'; // Implement these services
 
 const { Content } = Layout;
 const { Title } = Typography;

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { getUserDetails, updateUserDetails } from '../services/userService';
+import { getUserDetails, updateUserDetails } from '../../services/userService';
 
 const EditProfilePage = () => {
     const [user, setUser] = useState({});
