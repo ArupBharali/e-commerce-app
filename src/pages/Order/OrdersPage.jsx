@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { getUserOrders } from '../../services/userService';
-import LoadingIndicator from '../../components/LoadingIndicator';
+import LoadingIndicator from '../../components/LoadingIndicator/LoadingIndicator';
 
 const OrdersPage = () => {
     const [orders, setOrders] = useState([]);

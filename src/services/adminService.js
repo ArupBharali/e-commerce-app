@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 //const API_URL = import.meta.env.VITE_API_URL; // Ensure this is set correctly
-const API_URL = 'http://localhost:5268/api/admin'; // Ensure this is set correctly
+const API_URL = 'http://localhost:5000/api/admin'; // Ensure this is set correctly
 
 
 export const fetchOrders = async () => {

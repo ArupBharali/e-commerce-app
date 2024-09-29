@@ -1,7 +1,16 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\components",
+    "\\src\\components\\LoadingIndicator",
+    "\\src\\pages",
+    "\\src\\pages\\Analytics",
+    "\\src\\pages\\Order",
+    "\\src\\pages\\Profile",
+    "\\src\\pages\\Register",
+    "\\src\\pages\\Seller"
   ],
-  "SelectedNode": "\\C:\\Users\\Asus\\Source\\Repos\\ecommerce-app",
+  "SelectedNode": "\\src\\pages\\Analytics\\AnalyticsPage.jsx",
   "PreviewInSolutionExplorer": false
 }

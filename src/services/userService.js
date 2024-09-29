@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 //const API_BASE_URL = `${import.meta.env.VITE_API_URL}/user`;  // Update the base URL if needed
-const API_BASE_URL = 'http://localhost:5268/api/user'; // Ensure this is set correctly
+const API_BASE_URL = 'http://localhost:5000/api/user'; // Ensure this is set correctly
 
 
 const handleResponse = async (response) => {
